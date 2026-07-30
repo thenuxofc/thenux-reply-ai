@@ -1,0 +1,6 @@
+{
+  "name": "THENUX Reply AI",
+  "description": "AI-powered reply generator and writing assistant working across Android apps with Process Text integration",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

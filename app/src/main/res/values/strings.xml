@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">THENUX Reply AI</string>
+    <string name="accessibility_service_description">THENUX Context AI background reader assists with analyzing WhatsApp, Telegram, and SMS conversation text in real-time when enabled by the user.</string>
+</resources>
