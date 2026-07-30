@@ -1,0 +1,97 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0A12"/>
+      <stop offset="50%" stop-color="#0D0D1A"/>
+      <stop offset="100%" stop-color="#0A0A14"/>
+    </linearGradient>
+    <linearGradient id="violetCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#00F0FF"/>
+    </linearGradient>
+    <radialGradient id="glowViolet" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6C4CE0" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#6C4CE0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softBlur"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="strongGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="360" fill="url(#bgGrad)"/>
+
+  <!-- Ambient glow orbs -->
+  <circle cx="180" cy="90" r="220" fill="url(#glowViolet)">
+    <animate attributeName="cx" values="180;220;180" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1040" cy="280" r="240" fill="url(#glowCyan)">
+    <animate attributeName="cy" values="280;240;280" dur="9s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Grid lines -->
+  <g stroke="#8B5CF6" stroke-opacity="0.07" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="100" y1="0" x2="100" y2="360"/>
+    <line x1="1100" y1="0" x2="1100" y2="360"/>
+  </g>
+
+  <!-- Floating bubble motif (left) -->
+  <g transform="translate(140,175)" filter="url(#strongGlow)">
+    <circle r="46" fill="none" stroke="url(#violetCyan)" stroke-width="2.5" opacity="0.9">
+      <animate attributeName="r" values="44;50;44" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="30" fill="#12121F" stroke="#00F0FF" stroke-width="1.2" opacity="0.85"/>
+    <g stroke="#00F0FF" stroke-width="2" stroke-linecap="round">
+      <line x1="-12" y1="-4" x2="12" y2="-4" opacity="0.9">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+      </line>
+      <line x1="-12" y1="4" x2="6" y2="4" opacity="0.6">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+      </line>
+    </g>
+    <!-- Orbiting dot -->
+    <circle r="4" fill="#00F0FF">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="6s" repeatCount="indefinite"/>
+      <animateMotion path="M 46 0 A 46 46 0 1 1 45.9 0" dur="6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Chat reply chips floating (right side) -->
+  <g font-family="'Segoe UI', sans-serif" font-size="13" font-weight="600">
+    <g transform="translate(880,90)">
+      <rect x="0" y="0" width="130" height="34" rx="17" fill="#12121F" stroke="#8B5CF6" stroke-opacity="0.6"/>
+      <text x="65" y="22" fill="#C4B5FD" text-anchor="middle">😊 Friendly</text>
+      <animateTransform attributeName="transform" type="translate" values="880,90;880,80;880,90" dur="4s" repeatCount="indefinite"/>
+    </g>
+    <g transform="translate(950,140)">
+      <rect x="0" y="0" width="150" height="34" rx="17" fill="#12121F" stroke="#00F0FF" stroke-opacity="0.6"/>
+      <text x="75" y="22" fill="#67E8F9" text-anchor="middle">🇱🇰 Sinhala</text>
+      <animateTransform attributeName="transform" type="translate" values="950,140;950,150;950,140" dur="5s" repeatCount="indefinite"/>
+    </g>
+    <g transform="translate(870,195)">
+      <rect x="0" y="0" width="140" height="34" rx="17" fill="#12121F" stroke="#8B5CF6" stroke-opacity="0.6"/>
+      <text x="70" y="22" fill="#C4B5FD" text-anchor="middle">⚡ Short</text>
+      <animateTransform attributeName="transform" type="translate" values="870,195;870,205;870,195" dur="3.5s" repeatCount="indefinite"/>
+    </g>
+    <g transform="translate(960,245)">
+      <rect x="0" y="0" width="150" height="34" rx="17" fill="#12121F" stroke="#00F0FF" stroke-opacity="0.6"/>
+      <text x="75" y="22" fill="#67E8F9" text-anchor="middle">💬 Singlish</text>
+      <animateTransform attributeName="transform" type="translate" values="960,245;960,235;960,245" dur="4.5s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Connecting light trace -->
+  <path d="M 186 175 C 400 175, 500 150, 700 150" stroke="url(#violetCyan)" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="6 8">
+    <animate attributeName="stroke-dashoffset" values="0;-140" dur="4s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="356" width="1200" height="4" fill="url(#violetCyan)"/>
+</svg>

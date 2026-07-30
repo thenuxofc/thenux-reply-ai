@@ -1,0 +1,14 @@
+<svg width="1200" height="6" viewBox="0 0 1200 6" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dividerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0D0D14" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#8B5CF6"/>
+      <stop offset="50%" stop-color="#00F0FF"/>
+      <stop offset="80%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#0D0D14" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="6" fill="url(#dividerGrad)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+  </rect>
+</svg>
