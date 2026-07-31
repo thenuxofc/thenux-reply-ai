@@ -4,9 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THENUX Reply AI™ — AI Replies. Smarter Conversations.</title>
-    <meta name="description" content="THENUX Reply AI is a floating, tri-lingual smart-reply assistant for Android. Get instant Friendly, Professional, Sinhala, Singlish, Short and Formal replies inside WhatsApp, Instagram, Telegram, Gmail and more.">
+    <meta name="description" content="THENUX Reply AI is a floating, tri-lingual smart-reply assistant for Android. Get instant Friendly, Professional, Sinhala, Singlish, Short and Formal replies inside WhatsApp, Instagram, Telegram, Gmail and SMS. Download APK (29 MB).">
     <meta name="theme-color" content="#2563EB">
-    <meta name="color-scheme" content="light">
+    <meta name="color-scheme" content="light dark">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://replyai-thenux.netlify.app/">
+
+    <!-- Favicon & Touch Icons -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='30' fill='%232563EB'/><path d='M30 50 L45 65 L70 35' stroke='%23ffffff' stroke-width='10' fill='none' stroke-linecap='round'/></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='30' fill='%232563EB'/><path d='M30 50 L45 65 L70 35' stroke='%23ffffff' stroke-width='10' fill='none' stroke-linecap='round'/></svg>">
+
+    <!-- SEO Meta Tags for Google Search Console -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="THENUX AI Technologies (Thenula Panapiti)">
+    <meta name="keywords" content="THENUX Reply AI, Android Smart Reply, Sinhala AI Assistant, Singlish AI Reply, WhatsApp Floating Assistant, Instagram Direct DM AI, Tri-lingual Chat Bot, Android Accessibility Service AI, Smart Reply Android APK 29 MB">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://replyai-thenux.netlify.app/">
+    <meta property="og:title" content="THENUX Reply AI™ — Context-Aware Tri-Lingual Smart Assistant for Android">
+    <meta property="og:description" content="Floating AI overlay, accessibility-powered chat reader, and tri-lingual smart reply assistant for Android supporting WhatsApp, Instagram, Telegram, Gmail & SMS. Download 29 MB APK.">
+    <meta property="og:image" content="https://i.ibb.co/s8BLNRz/Chat-GPT-Image-Jul-31-2026-03-50-02-PM.png">
+    <meta property="og:site_name" content="THENUX Reply AI™">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://replyai-thenux.netlify.app/">
+    <meta name="twitter:title" content="THENUX Reply AI™ — AI Replies. Smarter Conversations.">
+    <meta name="twitter:description" content="Floating AI overlay for Android. Instant Sinhala, Singlish, and English smart replies inside WhatsApp, Instagram, Telegram and SMS. Download 29 MB APK.">
+    <meta name="twitter:image" content="https://i.ibb.co/s8BLNRz/Chat-GPT-Image-Jul-31-2026-03-50-02-PM.png">
+    <meta name="twitter:creator" content="@thenuxofc">
+
+    <!-- Structured Data JSON-LD Schema for Google Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "THENUX Reply AI™",
+          "operatingSystem": "Android 8.0+",
+          "applicationCategory": "UtilitiesApplication",
+          "fileSize": "29 MB",
+          "offers": {
+            "@type": "Offer",
+            "price": "0.00",
+            "priceCurrency": "USD"
+          },
+          "description": "Context-aware, tri-lingual floating smart reply assistant for Android supporting WhatsApp, Instagram DMs, Telegram, Messenger and SMS.",
+          "downloadUrl": "https://github.com/thenuxofc/thenux-reply-ai/releases/download/v1.0.0/THENUX.Reply.AI.apk",
+          "softwareVersion": "1.0.0",
+          "url": "https://replyai-thenux.netlify.app/"
+        },
+        {
+          "@type": "Organization",
+          "name": "THENUX AI Technologies",
+          "url": "https://thenuxofc.store",
+          "sameAs": [
+            "https://github.com/thenuxofc",
+            "https://www.instagram.com/thenux_ofc/",
+            "https://www.linkedin.com/in/thenuxofc/",
+            "https://whatsapp.com/channel/0029VbDjCJf4dTnSTwrWf739"
+          ]
+        }
+      ]
+    }
+    </script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +82,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <style>
+        /* Light Theme Tokens */
         :root {
             --primary: #2563EB;
             --primary-dark: #1D4ED8;
@@ -25,12 +91,21 @@
             --accent-light: #67E8F9;
             --bg: #F7F9FC;
             --bg-alt: #EEF2F7;
-            --card: #FFFFFF;
+            --card: rgba(255, 255, 255, 0.85);
+            --card-solid: #FFFFFF;
             --text-dark: #0F172A;
             --text-gray: #475569;
             --text-light: #64748B;
-            --border: #E2E8F0;
+            --border: rgba(226, 232, 240, 0.9);
             --border-light: #F1F5F9;
+            --nav-bg: rgba(247, 249, 252, 0.85);
+            --nav-scrolled: rgba(247, 249, 252, 0.96);
+            --phone-bg: linear-gradient(180deg, #EEF4FF, #F7F9FC);
+            --chat-in: #FFFFFF;
+            --chat-in-border: #E2E8F0;
+            --glass-bg: rgba(255, 255, 255, 0.72);
+            --glass-border: rgba(255, 255, 255, 0.6);
+            --glass-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
             --success: #10B981;
             --warning: #F59E0B;
             --danger: #EF4444;
@@ -56,9 +131,35 @@
             --shadow-glow: 0 20px 60px rgba(37, 99, 235, .2);
             --shadow-glow-sm: 0 8px 24px rgba(37, 99, 235, .15);
             --grad-brand: linear-gradient(135deg, #2563EB 0%, #3B82F6 40%, #06B6D4 100%);
+            --grad-vibrant: linear-gradient(135deg, #1D4ED8 0%, #2563EB 50%, #06B6D4 100%);
             --grad-shimmer: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
             --transition-fast: .2s cubic-bezier(.4, 0, .2, 1);
             --transition-smooth: .3s cubic-bezier(.16, 1, .3, 1);
+        }
+
+        /* Dark Theme Overrides */
+        [data-theme="dark"] {
+            --bg: #090D16;
+            --bg-alt: #111827;
+            --card: rgba(21, 29, 42, 0.78);
+            --card-solid: #151D2A;
+            --text-dark: #F8FAFC;
+            --text-gray: #94A3B8;
+            --text-light: #64748B;
+            --border: rgba(36, 48, 68, 0.9);
+            --border-light: #1E293B;
+            --nav-bg: rgba(9, 13, 22, 0.85);
+            --nav-scrolled: rgba(9, 13, 22, 0.96);
+            --phone-bg: linear-gradient(180deg, #0F172A, #1E293B);
+            --chat-in: #1E293B;
+            --chat-in-border: #334155;
+            --glass-bg: rgba(21, 29, 42, 0.75);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --glass-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+            --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.35);
+            --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.45);
+            --shadow-xl: 0 24px 50px rgba(0, 0, 0, 0.55);
         }
 
         *,
@@ -74,15 +175,28 @@
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
             overflow-x: hidden;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        h1, h2, h3, h4 { font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; line-height: 1.2; font-weight: 700; }
+        /* Top Scroll Progress Indicator */
+        #scrollProgress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3.5px;
+            background: var(--grad-brand);
+            width: 0%;
+            z-index: 2000;
+            transition: width 0.1s ease;
+        }
+
+        h1, h2, h3, h4 { font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; line-height: 1.2; font-weight: 700; color: var(--text-dark); }
         p { color: var(--text-gray); }
         a { color: inherit; text-decoration: none; }
         button { font-family: inherit; cursor: pointer; border: none; background: none; }
         ul { list-style: none; }
 
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
         
         /* Scroll Reveal Animations */
         .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
@@ -96,17 +210,17 @@
         .hero-bg-orb {
             position: absolute;
             border-radius: 50%;
-            filter: blur(80px);
+            filter: blur(90px);
             pointer-events: none;
             z-index: 1;
-            opacity: 0.5;
+            opacity: 0.55;
             animation: orbFloat 10s ease-in-out infinite alternate;
         }
-        .orb-blue { top: -80px; right: -50px; width: 400px; height: 400px; background: rgba(37, 99, 235, 0.15); }
-        .orb-cyan { bottom: 0; left: -100px; width: 450px; height: 450px; background: rgba(6, 182, 212, 0.12); }
+        .orb-blue { top: -80px; right: -50px; width: 420px; height: 420px; background: rgba(37, 99, 235, 0.18); }
+        .orb-cyan { bottom: 0; left: -100px; width: 460px; height: 460px; background: rgba(6, 182, 212, 0.15); }
         @keyframes orbFloat {
             0% { transform: translate(0, 0) scale(1); }
-            100% { transform: translate(30px, -40px) scale(1.1); }
+            100% { transform: translate(35px, -45px) scale(1.12); }
         }
 
         .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: .78rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--primary); background: rgba(37,99,235,.07); padding: 7px 15px; border-radius: 100px; margin-bottom: 16px; transition: transform 0.3s; }
@@ -120,10 +234,10 @@
 
         /* Enhanced Buttons with Shimmer & Glow */
         .btn {
-            position: relative; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; gap: 10px;
-            font-weight: 700; font-size: .95rem; padding: 15px 28px; border-radius: 100px; border: 1.5px solid transparent;
+            position: relative; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+            font-weight: 700; font-size: .92rem; padding: 14px 26px; border-radius: 100px; border: 1.5px solid transparent;
             transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-smooth);
-            min-height: 50px; letter-spacing: .01em;
+            min-height: 48px; letter-spacing: .01em; white-space: nowrap;
         }
         .btn::after {
             content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
@@ -133,40 +247,188 @@
         .btn:hover::after { transform: rotate(30deg) translateY(100%); }
         .btn-primary { background: var(--grad-brand); color: #fff; border: none; box-shadow: var(--shadow-glow-sm); }
         .btn-primary:hover { transform: translateY(-3px); box-shadow: var(--shadow-glow); }
-        .btn-outline { background: var(--card); color: var(--text-dark); border-color: var(--border); }
+        .btn-outline { background: var(--card); color: var(--text-dark); border-color: var(--border); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
         .btn-outline:hover { border-color: var(--primary); color: var(--primary); transform: translateY(-2px); box-shadow: var(--shadow-md); }
         .btn-white { background: #fff; color: var(--primary); border: none; box-shadow: var(--shadow-md); }
         .btn-white:hover { transform: translateY(-3px); box-shadow: 0 20px 40px rgba(0,0,0,.15); }
-        .btn-lg { padding: 18px 36px; font-size: 1.05rem; }
+        .btn-lg { padding: 18px 34px; font-size: 1.02rem; }
         .btn-block { width: 100%; }
-        .btn-sm { padding: 10px 20px; font-size: .85rem; min-height: 40px; }
+        .btn-sm { padding: 9px 18px; font-size: .82rem; min-height: 38px; }
 
         .ripple { position: absolute; border-radius: 50%; background: rgba(255,255,255,.5); transform: scale(0); animation: ripple-anim .6s ease-out forwards; pointer-events: none; }
         @keyframes ripple-anim { to { transform: scale(3); opacity: 0; } }
 
-        /* Navbar */
-        .navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(247,249,252,.75); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); border-bottom: 1px solid transparent; transition: border-color .3s, box-shadow .3s, background .3s; }
-        .navbar.scrolled { border-color: var(--border); box-shadow: 0 4px 25px rgba(15,23,42,.08); background: rgba(247,249,252,.95); }
-        .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 74px; }
-        .brand { display: flex; align-items: center; gap: 10px; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.1rem; color: var(--text-dark); }
-        .brand-mark { width: 40px; height: 40px; border-radius: 12px; background: var(--grad-brand); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1rem; box-shadow: 0 6px 16px rgba(37,99,235,.3); transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        /* FIXED & RESPONSIVE GLASS NAVBAR */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: var(--nav-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid transparent;
+            transition: border-color .3s, box-shadow .3s, background .3s;
+        }
+        .navbar.scrolled {
+            border-color: var(--border);
+            box-shadow: 0 4px 25px rgba(15,23,42,.08);
+            background: var(--nav-scrolled);
+        }
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 76px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            font-size: 1.08rem;
+            color: var(--text-dark);
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .brand-mark {
+            width: 38px;
+            height: 38px;
+            border-radius: 12px;
+            background: var(--grad-brand);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 0.95rem;
+            box-shadow: 0 6px 16px rgba(37,99,235,.3);
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
         .brand:hover .brand-mark { transform: rotate(12deg) scale(1.08); }
         .brand small { display: block; font-size: .6rem; font-weight: 600; color: var(--text-gray); letter-spacing: .05em; }
-        .nav-links { display: flex; align-items: center; gap: 4px; }
-        .nav-links a { font-size: .9rem; font-weight: 600; color: var(--text-gray); padding: 10px 15px; border-radius: 100px; transition: color .2s, background .2s, transform .2s; }
-        .nav-links a:hover { color: var(--primary); background: rgba(37,99,235,.06); transform: translateY(-1px); }
-        .nav-actions { display: flex; align-items: center; gap: 12px; }
-        .menu-toggle { display: none; width: 44px; height: 44px; border-radius: 12px; border: 1.5px solid var(--border); background: var(--card); align-items: center; justify-content: center; font-size: 1.1rem; color: var(--text-dark); transition: transform 0.2s; }
+        
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            flex-shrink: 0;
+        }
+        .nav-links a {
+            font-size: .86rem;
+            font-weight: 600;
+            color: var(--text-gray);
+            padding: 7px 13px;
+            border-radius: 100px;
+            white-space: nowrap;
+            transition: color .2s, background .2s, transform .2s;
+        }
+        .nav-links a:hover {
+            color: var(--primary);
+            background: rgba(37,99,235,.08);
+            transform: translateY(-1px);
+        }
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+
+        /* Sleek Theme Toggle Button */
+        .theme-toggle {
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            border: 1.5px solid var(--border);
+            background: var(--card);
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            cursor: pointer;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            transition: background 0.3s, border-color 0.3s, color 0.3s, transform 0.2s;
+        }
+        .theme-toggle:hover {
+            border-color: var(--primary);
+            transform: scale(1.08);
+            color: var(--primary);
+        }
+
+        .menu-toggle { display: none; width: 42px; height: 42px; border-radius: 12px; border: 1.5px solid var(--border); background: var(--card); align-items: center; justify-content: center; font-size: 1.1rem; color: var(--text-dark); transition: transform 0.2s; }
         .menu-toggle:active { transform: scale(0.92); }
-        .mobile-panel { display: none; position: fixed; top: 74px; left: 0; right: 0; bottom: 0; background: var(--bg); padding: 20px 24px; overflow-y: auto; z-index: 999; border-top: 1px solid var(--border); }
-        .mobile-panel.open { display: block; animation: fadeSlide .3s ease; }
-        .mobile-panel a { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; font-size: 1.05rem; font-weight: 700; border-bottom: 1px solid var(--border-light); color: var(--text-dark); }
-        .mobile-panel a:hover { color: var(--primary); }
+        
+        /* Glassmorphic Mobile Menu Drawer */
+        .mobile-panel {
+            display: none;
+            position: fixed;
+            top: 76px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--nav-scrolled);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            padding: 24px 20px 40px;
+            overflow-y: auto;
+            z-index: 999;
+            border-top: 1px solid var(--border);
+        }
+        .mobile-panel.open { display: flex; flex-direction: column; gap: 8px; animation: fadeSlide .3s ease; }
+        .mobile-panel a.mobile-nav-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 18px;
+            font-size: 0.96rem;
+            font-weight: 700;
+            border-radius: 14px;
+            border: 1px solid var(--border);
+            background: var(--card);
+            color: var(--text-dark);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            transition: all 0.25s cubic-bezier(.16,1,.3,1);
+        }
+        .mobile-panel a.mobile-nav-link:hover {
+            transform: translateX(4px);
+            border-color: var(--primary);
+            color: var(--primary);
+            box-shadow: 0 4px 12px rgba(37,99,235,0.12);
+        }
+        .mobile-panel .mobile-btn-wrap {
+            margin-top: 16px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+        }
+        .mobile-panel .mobile-btn-wrap .btn {
+            width: 100%;
+            padding: 16px 20px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            white-space: nowrap;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-radius: 100px;
+            box-shadow: var(--shadow-glow-sm);
+        }
         @keyframes fadeSlide { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
 
-        @media (max-width: 920px) {
+        /* Responsive Breakpoints for Clean Header */
+        @media (max-width: 1180px) {
             .nav-links, .nav-cta.desktop-only { display: none; }
             .menu-toggle { display: flex; }
+        }
+        @media (max-width: 480px) {
+            .brand { font-size: 0.95rem; gap: 8px; }
+            .brand-mark { width: 34px; height: 34px; font-size: 0.85rem; }
+            .brand small { display: none; }
         }
 
         /* Hero */
@@ -178,7 +440,7 @@
         .hero-btns { display: flex; gap: 14px; margin-top: 32px; flex-wrap: wrap; }
         .hero-stats { display: flex; gap: 32px; margin-top: 44px; flex-wrap: wrap; }
         .stat-item { display: flex; align-items: center; gap: 10px; transition: transform 0.3s; }
-        .stat-item:hover { transform: translateY(-3px); }
+        .stat-item:hover { transform: translateY(-4px); }
         .stat-icon { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
         .stat-icon.si1 { background: rgba(37,99,235,.1); color: var(--primary); }
         .stat-icon.si2 { background: rgba(6,182,212,.1); color: var(--accent); }
@@ -189,14 +451,14 @@
         .hero-visual { display: flex; justify-content: center; align-items: center; min-height: 540px; position: relative; }
         .phone { width: 260px; height: 530px; border-radius: 40px; background: #1a1a2e; padding: 10px; box-shadow: 0 35px 70px -16px rgba(15,23,42,.35); animation: float-phone 6s ease-in-out infinite; position: relative; z-index: 5; }
         @keyframes float-phone { 0%,100% { transform: translateY(0) rotate(-1deg); } 50% { transform: translateY(-16px) rotate(1deg); } }
-        .phone-screen { width: 100%; height: 100%; border-radius: 32px; background: linear-gradient(180deg, #EEF4FF, #F7F9FC); overflow: hidden; display: flex; flex-direction: column; position: relative; }
+        .phone-screen { width: 100%; height: 100%; border-radius: 32px; background: var(--phone-bg); overflow: hidden; display: flex; flex-direction: column; position: relative; }
         .phone-notch { width: 100px; height: 20px; background: #1a1a2e; border-radius: 0 0 14px 14px; margin: 0 auto; }
-        .chat-header { display: flex; align-items: center; gap: 10px; padding: 12px 14px; background: #fff; border-bottom: 1px solid #E2E8F0; }
+        .chat-header { display: flex; align-items: center; gap: 10px; padding: 12px 14px; background: var(--card); border-bottom: 1px solid var(--border); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
         .chat-header .avatar { width: 34px; height: 34px; border-radius: 50%; background: var(--grad-brand); }
-        .chat-header .name { font-size: 0.85rem; font-weight: 700; }
+        .chat-header .name { font-size: 0.85rem; font-weight: 700; color: var(--text-dark); }
         .chat-header .status { font-size: 0.65rem; color: var(--success); }
         .chat-body { flex: 1; padding: 12px; display: flex; flex-direction: column; gap: 8px; overflow-y: auto; }
-        .bubble-in { align-self: flex-start; background: #fff; border: 1px solid #E2E8F0; padding: 9px 12px; border-radius: 14px 14px 14px 4px; font-size: .7rem; max-width: 85%; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
+        .bubble-in { align-self: flex-start; background: var(--chat-in); border: 1px solid var(--chat-in-border); color: var(--text-dark); padding: 9px 12px; border-radius: 14px 14px 14px 4px; font-size: .7rem; max-width: 85%; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
         .reply-chip { align-self: flex-end; max-width: 85%; padding: 8px 12px; border-radius: 14px 14px 4px 14px; font-size: .66rem; font-weight: 600; color: #fff; opacity: 0; animation: chip-in .5s forwards; cursor: pointer; transition: transform 0.2s; }
         .reply-chip:hover { transform: scale(1.03); }
         .reply-chip span.tag { display: block; font-size: .54rem; font-weight: 700; opacity: .85; text-transform: uppercase; margin-bottom: 2px; }
@@ -209,39 +471,53 @@
         .fab-mini:hover { transform: scale(1.15) rotate(15deg); }
         @keyframes pulse-fab { 0%,100% { box-shadow: 0 8px 20px rgba(37,99,235,.4); } 50% { box-shadow: 0 8px 20px rgba(37,99,235,.4), 0 0 0 12px rgba(37,99,235,.15); } }
         
-        .float-card { position: absolute; background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 10px 14px; box-shadow: var(--shadow-lg); display: flex; align-items: center; gap: 9px; font-size: .76rem; font-weight: 700; animation: float-card 5s infinite ease-in-out; z-index: 6; backdrop-filter: blur(10px); transition: transform 0.3s, box-shadow 0.3s; }
+        .float-card { position: absolute; background: var(--card); border: 1px solid var(--border); color: var(--text-dark); border-radius: 14px; padding: 10px 14px; box-shadow: var(--shadow-lg); display: flex; align-items: center; gap: 9px; font-size: .76rem; font-weight: 700; animation: float-card 5s infinite ease-in-out; z-index: 6; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); transition: transform 0.3s, box-shadow 0.3s; }
         .float-card:hover { transform: scale(1.05) translateY(-5px) !important; box-shadow: var(--shadow-xl); }
         .float-card.fc1 { top: 10%; left: -6%; animation-delay: .2s; }
         .float-card.fc2 { bottom: 22%; right: -8%; animation-delay: 1s; }
         .float-card.fc3 { top: 45%; right: -12%; animation-delay: 1.8s; }
         @keyframes float-card { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
 
-        /* VIDEO PREVIEW SECTION */
-        .video-section { background: var(--card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-        .video-container { max-width: 880px; margin: 0 auto; position: relative; }
-        .video-frame-wrapper {
+        /* COMPACT PHONE FRAME VIDEO PREVIEW SECTION */
+        .video-section { background: var(--card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+        .video-container { max-width: 600px; margin: 0 auto; text-align: center; }
+        .video-phone-frame {
+            width: 270px;
+            max-width: 100%;
+            margin: 0 auto;
             position: relative;
-            border-radius: var(--radius-xl);
-            padding: 12px;
-            background: linear-gradient(135deg, rgba(37,99,235,0.1), rgba(6,182,212,0.1));
-            border: 1px solid var(--border);
-            box-shadow: var(--shadow-xl), 0 0 50px rgba(37,99,235,0.15);
-            overflow: hidden;
+            border-radius: 36px;
+            background: #1a1a2e;
+            padding: 8px;
+            box-shadow: 0 25px 60px -12px rgba(15,23,42,.35), 0 0 40px rgba(37,99,235,0.2);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .video-phone-notch {
+            width: 90px;
+            height: 16px;
+            background: #1a1a2e;
+            border-radius: 0 0 12px 12px;
+            position: absolute;
+            top: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
         }
         .video-player {
             width: 100%;
             height: auto;
-            border-radius: var(--radius-lg);
+            max-height: 540px;
+            border-radius: 28px;
             display: block;
             background: #000;
             outline: none;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
         .video-badges {
             display: flex;
             justify-content: center;
             gap: 12px;
-            margin-top: 20px;
+            margin-top: 24px;
             flex-wrap: wrap;
         }
         .video-badge-item {
@@ -255,48 +531,74 @@
             background: var(--bg);
             border: 1px solid var(--border);
             color: var(--text-dark);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
         }
 
-        /* Feature grid */
+        /* Glassmorphic Feature Grid with 3D Hover Lift */
         .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-        .feature-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 24px 22px; transition: transform .3s cubic-bezier(.16,1,.3,1), box-shadow .3s cubic-bezier(.16,1,.3,1), border-color .3s; }
-        .feature-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-xl); border-color: var(--primary); }
+        .feature-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 24px 22px;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            transition: transform .3s cubic-bezier(.16,1,.3,1), box-shadow .3s cubic-bezier(.16,1,.3,1), border-color .3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: var(--shadow-xl), 0 0 20px rgba(37,99,235,0.15);
+            border-color: var(--primary);
+        }
         .feature-icon { width: 48px; height: 48px; border-radius: 14px; background: var(--grad-brand); display: flex; align-items: center; justify-content: center; color: #fff; margin-bottom: 14px; transition: transform 0.3s; }
-        .feature-card:hover .feature-icon { transform: scale(1.1) rotate(6deg); }
-        .feature-card h3 { font-size: .98rem; margin-bottom: 6px; }
-        .feature-card p { font-size: .84rem; }
+        .feature-card:hover .feature-icon { transform: scale(1.12) rotate(8deg); }
+        .feature-card h3 { font-size: .98rem; margin-bottom: 6px; color: var(--text-dark); }
+        .feature-card p { font-size: .84rem; color: var(--text-gray); }
 
         /* How it works */
-        .timeline-section { background: var(--card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+        .timeline-section { background: var(--card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
         .timeline { position: relative; max-width: 920px; margin: 0 auto; }
         .timeline::before { content: ''; position: absolute; top: 38px; left: 38px; right: 38px; height: 2.5px; background: linear-gradient(90deg, var(--border), var(--primary), var(--border)); }
         .timeline-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
         .tl-step { text-align: center; }
-        .tl-num { width: 72px; height: 72px; border-radius: 50%; background: var(--card); border: 2.5px solid var(--border); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.4rem; color: var(--primary); transition: all .3s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        .tl-num { width: 72px; height: 72px; border-radius: 50%; background: var(--card); border: 2.5px solid var(--border); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.4rem; color: var(--primary); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); transition: all .3s cubic-bezier(0.34, 1.56, 0.64, 1); }
         .tl-step:hover .tl-num { background: var(--grad-brand); color: #fff; border-color: transparent; transform: scale(1.15) rotate(8deg); box-shadow: var(--shadow-glow-sm); }
-        .tl-step h3 { font-size: .98rem; margin-bottom: 6px; }
+        .tl-step h3 { font-size: .98rem; margin-bottom: 6px; color: var(--text-dark); }
         .tl-step p { font-size: .84rem; color: var(--text-gray); }
 
-        /* Floating assistant */
-        .flow-showcase { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-xl); padding: 50px; display: grid; grid-template-columns: 1fr 1.1fr; gap: 44px; align-items: center; box-shadow: var(--shadow-sm); }
-        .flow-node { display: flex; align-items: center; gap: 12px; background: var(--bg); border: 1px solid var(--border); border-radius: 100px; padding: 13px 22px; font-weight: 700; font-size: .9rem; transition: transform 0.3s, border-color 0.3s; }
+        /* Glassmorphic Floating assistant showcase */
+        .flow-showcase {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            padding: 50px;
+            display: grid;
+            grid-template-columns: 1fr 1.1fr;
+            gap: 44px;
+            align-items: center;
+            box-shadow: var(--shadow-sm);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        .flow-node { display: flex; align-items: center; gap: 12px; background: var(--bg); border: 1px solid var(--border); border-radius: 100px; padding: 13px 22px; font-weight: 700; font-size: .9rem; color: var(--text-dark); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); transition: transform 0.3s, border-color 0.3s; }
         .flow-node:hover { transform: translateX(6px); border-color: var(--primary); }
         .flow-node i { width: 20px; text-align: center; }
         .flow-arrow { color: var(--primary); padding: 6px 0; text-align: center; animation: arrow-bounce 1.6s infinite; }
         @keyframes arrow-bounce { 0%,100% { transform: translateY(0); opacity: .6; } 50% { transform: translateY(5px); opacity: 1; } }
-        .flow-copy h3 { font-size: 1.45rem; margin-bottom: 12px; }
+        .flow-copy h3 { font-size: 1.45rem; margin-bottom: 12px; color: var(--text-dark); }
         .flow-list li { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 10px; font-size: .9rem; color: var(--text-gray); }
         .flow-list i { color: var(--success); margin-top: 4px; }
 
-        /* Reply showcase */
-        .reply-demo-section { background: var(--card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+        /* Glassmorphic Reply showcase */
+        .reply-demo-section { background: var(--card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
         .reply-demo { display: grid; grid-template-columns: .9fr 1.1fr; gap: 44px; align-items: center; }
-        .rd-chat { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 20px; }
+        .rd-chat { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 20px; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
         .rd-incoming { margin-bottom: 16px; display: flex; gap: 10px; align-items: flex-start; }
         .rd-avatar { width: 34px; height: 34px; border-radius: 50%; background: var(--grad-brand); flex-shrink: 0; }
         .tone-tabs { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 16px; }
-        .tone-tab { border: 1.5px solid var(--border); background: var(--card); border-radius: 100px; padding: 7px 14px; font-size: .76rem; font-weight: 700; color: var(--text-gray); cursor: pointer; transition: all .2s; }
-        .tone-tab:hover { transform: translateY(-1px); }
+        .tone-tab { border: 1.5px solid var(--border); background: var(--card); border-radius: 100px; padding: 7px 14px; font-size: .76rem; font-weight: 700; color: var(--text-gray); cursor: pointer; transition: all .2s; display: flex; align-items: center; gap: 6px; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .tone-tab:hover { transform: translateY(-2px); }
         .tone-tab.active { color: #fff; border-color: transparent; transform: scale(1.05); box-shadow: var(--shadow-sm); }
         .tone-tab[data-tone="friendly"].active { background: var(--friendly); }
         .tone-tab[data-tone="professional"].active { background: var(--professional); }
@@ -304,69 +606,284 @@
         .tone-tab[data-tone="singlish"].active { background: var(--singlish); }
         .tone-tab[data-tone="short"].active { background: var(--short); }
         .tone-tab[data-tone="formal"].active { background: var(--formal); }
-        .rd-output { background: var(--card); border: 2px dashed var(--border); border-radius: 14px; padding: 16px 40px 16px 18px; min-height: 90px; position: relative; transition: opacity 0.2s ease, border-color 0.2s; }
-        .rd-output .copy-btn { position: absolute; top: 10px; right: 10px; width: 34px; height: 34px; border-radius: 10px; border: 1px solid var(--border); background: var(--card); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: background 0.2s, transform 0.2s; }
+        .rd-output { background: var(--card); border: 2px dashed var(--border); color: var(--text-dark); border-radius: 14px; padding: 16px 40px 16px 18px; min-height: 90px; position: relative; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); transition: opacity 0.2s ease, border-color 0.2s; }
+        .rd-output .copy-btn { position: absolute; top: 10px; right: 10px; width: 34px; height: 34px; border-radius: 10px; border: 1px solid var(--border); background: var(--card); color: var(--text-dark); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: background 0.2s, transform 0.2s; }
         .rd-output .copy-btn:hover { background: var(--bg-alt); transform: scale(1.08); }
-        .rd-toast { position: absolute; bottom: -12px; right: 16px; background: var(--text-dark); color: #fff; font-size: .7rem; padding: 6px 12px; border-radius: 100px; opacity: 0; transform: translateY(5px); transition: all .3s; }
+        .rd-toast { position: absolute; bottom: -12px; right: 16px; background: var(--text-dark); color: var(--bg); font-size: .7rem; padding: 6px 12px; border-radius: 100px; opacity: 0; transform: translateY(5px); transition: all .3s; }
         .rd-toast.show { opacity: 1; transform: translateY(0); }
 
-        /* Apps Grid (Includes Instagram!) */
+        /* Glassmorphic Apps Grid */
         .apps-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
-        .app-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 22px 14px; text-align: center; transition: transform .3s cubic-bezier(.16,1,.3,1), box-shadow .3s, border-color .3s; }
-        .app-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: rgba(37,99,235,0.3); }
+        .app-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 22px 14px;
+            text-align: center;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            transition: transform .3s cubic-bezier(.16,1,.3,1), box-shadow .3s, border-color .3s;
+        }
+        .app-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: var(--shadow-lg), 0 0 20px rgba(37,99,235,0.15);
+            border-color: rgba(37,99,235,0.4);
+        }
         .app-card i { font-size: 1.8rem; margin-bottom: 10px; transition: transform 0.3s; }
         .app-card:hover i { transform: scale(1.18); }
-        .app-card span { display: block; font-size: .8rem; font-weight: 700; }
+        .app-card span { display: block; font-size: .8rem; font-weight: 700; color: var(--text-dark); }
 
         /* Comparison */
-        .comparison-section { background: var(--card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-        .compare-wrap { overflow-x: auto; border-radius: var(--radius-lg); border: 1px solid var(--border); background: var(--card); }
+        .comparison-section { background: var(--card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+        .compare-wrap { overflow-x: auto; border-radius: var(--radius-lg); border: 1px solid var(--border); background: var(--card); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
         table.compare { width: 100%; border-collapse: collapse; min-width: 580px; }
-        table.compare th, table.compare td { padding: 16px 20px; font-size: .9rem; border-bottom: 1px solid var(--border-light); }
+        table.compare th, table.compare td { padding: 16px 20px; font-size: .9rem; border-bottom: 1px solid var(--border-light); color: var(--text-dark); }
         table.compare thead th { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; background: var(--bg); }
         table.compare thead th.hi { color: var(--primary); background: rgba(37,99,235,.05); }
         table.compare td.hi { background: rgba(37,99,235,.03); font-weight: 700; }
         .vs-badge { display: inline-block; background: var(--grad-brand); color: #fff; padding: 4px 10px; border-radius: 100px; font-size: .7rem; margin: 0 8px; }
 
-        /* Privacy */
+        /* Glassmorphic Privacy Section */
         .privacy-wrap { display: grid; grid-template-columns: .8fr 1.2fr; gap: 50px; align-items: center; }
-        .privacy-point { display: flex; gap: 14px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 16px 18px; margin-bottom: 14px; transition: transform 0.3s; }
-        .privacy-point:hover { transform: translateX(6px); }
+        .privacy-point {
+            display: flex;
+            gap: 14px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 16px 18px;
+            margin-bottom: 14px;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .privacy-point:hover { transform: translateX(8px); border-color: var(--primary); }
         .privacy-point .pi-icon { width: 42px; height: 42px; border-radius: 12px; background: rgba(6,182,212,.08); color: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-        .privacy-point h4 { font-size: .92rem; margin-bottom: 3px; }
+        .privacy-point h4 { font-size: .92rem; margin-bottom: 3px; color: var(--text-dark); }
 
         /* Screenshots Carousel */
-        .carousel-section { background: var(--card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+        .carousel-section { background: var(--card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
         .carousel { position: relative; max-width: 900px; margin: 0 auto; }
         .carousel-track-wrap { overflow: hidden; border-radius: var(--radius-lg); padding: 10px 0; }
         .carousel-track { display: flex; gap: 20px; transition: transform .6s cubic-bezier(.16,1,.3,1); }
         .shot { flex: 0 0 auto; width: 220px; border-radius: 28px; overflow: hidden; box-shadow: var(--shadow-lg); background: #f0f0f0; transition: transform 0.3s; }
-        .shot:hover { transform: scale(1.02); }
+        .shot:hover { transform: scale(1.04); }
         .shot img { display: block; width: 100%; height: auto; }
-        .carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; background: var(--card); border: 1px solid var(--border); box-shadow: var(--shadow-md); display: flex; align-items: center; justify-content: center; z-index: 5; cursor: pointer; transition: transform 0.2s, background 0.2s; }
+        .carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; background: var(--card); color: var(--text-dark); border: 1px solid var(--border); box-shadow: var(--shadow-md); display: flex; align-items: center; justify-content: center; z-index: 5; cursor: pointer; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); transition: transform 0.2s, background 0.2s; }
         .carousel-btn:hover { background: var(--primary); color: #fff; transform: translateY(-50%) scale(1.1); }
         .carousel-btn.prev { left: -16px; }
         .carousel-btn.next { right: -16px; }
         .carousel-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--border); transition: all .3s; cursor: pointer; border: none; }
         .carousel-dot.active { background: var(--primary); width: 26px; border-radius: 5px; }
 
-        /* FAQ Accordion */
+        /* Glassmorphic FAQ Accordion */
         .faq-list { max-width: 740px; margin: 0 auto; display: grid; gap: 10px; }
-        .faq-item { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-md); overflow: hidden; transition: border-color 0.3s; }
-        .faq-item:hover { border-color: var(--primary); }
-        .faq-q { width: 100%; text-align: left; background: none; border: none; padding: 18px 20px; display: flex; justify-content: space-between; align-items: center; font-size: .95rem; font-weight: 700; cursor: pointer; }
+        .faq-item {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            transition: border-color 0.3s, transform 0.3s;
+        }
+        .faq-item:hover { border-color: var(--primary); transform: translateY(-2px); }
+        .faq-q { width: 100%; text-align: left; background: none; border: none; padding: 18px 20px; display: flex; justify-content: space-between; align-items: center; font-size: .95rem; font-weight: 700; color: var(--text-dark); cursor: pointer; }
         .faq-q i { transition: transform .3s; color: var(--primary); }
         .faq-item.open .faq-q i { transform: rotate(45deg); }
         .faq-a { max-height: 0; overflow: hidden; transition: max-height .4s cubic-bezier(.16,1,.3,1); }
         .faq-item.open .faq-a { max-height: 200px; }
         .faq-a-inner { padding: 0 20px 18px; font-size: .88rem; color: var(--text-gray); }
 
-        /* Download Card */
-        .download-card { background: var(--grad-brand); border-radius: var(--radius-2xl); padding: 60px 44px; text-align: center; color: #fff; box-shadow: var(--shadow-glow); position: relative; overflow: hidden; }
-        .dl-android { width: 72px; height: 72px; border-radius: 20px; background: rgba(255,255,255,.15); display: flex; align-items: center; justify-content: center; font-size: 2.2rem; margin: 0 auto 20px; animation: pulse-fab 3s infinite; }
-        .download-card h2 { color: #fff; font-size: clamp(1.6rem, 2.8vw, 2.2rem); }
-        .dl-meta { display: flex; justify-content: center; gap: 20px; margin: 24px 0 28px; flex-wrap: wrap; }
-        .dl-meta-item { display: flex; align-items: center; gap: 7px; font-size: .82rem; background: rgba(255,255,255,.12); padding: 9px 15px; border-radius: 100px; backdrop-filter: blur(5px); }
+        /* ADVANCED & COLORFUL DOWNLOAD SECTION */
+        .download-wrapper {
+            background: var(--grad-vibrant);
+            border-radius: var(--radius-2xl);
+            padding: 70px 40px;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 25px 70px rgba(37, 99, 235, 0.35);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .download-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -150px;
+            right: -150px;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.12);
+            filter: blur(50px);
+            pointer-events: none;
+        }
+        .download-wrapper::after {
+            content: '';
+            position: absolute;
+            bottom: -150px;
+            left: -150px;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: rgba(6, 182, 212, 0.2);
+            filter: blur(60px);
+            pointer-events: none;
+        }
+        .dl-brand-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(12px);
+            border: 1.5px solid rgba(255, 255, 255, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.6rem;
+            margin: 0 auto 24px;
+            color: #fff;
+            animation: pulse-fab 3s infinite;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        .dl-header-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 18px;
+            border-radius: 100px;
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(10px);
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+        .download-wrapper h2 {
+            color: #fff;
+            font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+        .download-wrapper p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.08rem;
+            max-width: 620px;
+            margin: 0 auto 36px;
+            line-height: 1.65;
+        }
+        .dl-stats-grid {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        .dl-stat-pill {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            border-radius: 100px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #fff;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .dl-stat-pill:hover {
+            transform: translateY(-2px);
+            background: rgba(255, 255, 255, 0.25);
+        }
+        .dl-stat-pill.highlight-size {
+            background: rgba(6, 182, 212, 0.35);
+            border-color: rgba(103, 232, 249, 0.6);
+            box-shadow: 0 0 20px rgba(6, 182, 212, 0.4);
+        }
+        .dl-actions {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        
+        /* Installation Steps Grid Below Download */
+        .install-guide-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 44px;
+            text-align: left;
+        }
+        .install-card {
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius-md);
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .install-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+        .install-card-num {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            color: #fff;
+        }
+        .install-card h4 {
+            font-size: 0.95rem;
+            color: #fff;
+            margin-bottom: 6px;
+        }
+        .install-card p {
+            font-size: 0.82rem;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.5;
+        }
+
+        /* Back to Top Floating Button */
+        #backToTop {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: #fff;
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            cursor: pointer;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s, transform 0.3s;
+            z-index: 999;
+        }
+        #backToTop.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        #backToTop:hover {
+            transform: translateY(-3px) scale(1.08);
+            background: var(--primary-dark);
+        }
 
         /* Footer */
         footer { background: #0F172A; color: #94A3B8; padding: 60px 0 24px; }
@@ -374,11 +891,11 @@
         .footer-brand .brand { color: #fff; font-size: 1.05rem; }
         .footer-brand p { color: #94A3B8; font-size: .84rem; margin-top: 12px; }
         .footer-col h4 { color: #fff; font-size: .82rem; text-transform: uppercase; margin-bottom: 14px; }
-        .footer-col a { display: block; color: #94A3B8; font-size: .85rem; margin-bottom: 10px; transition: color 0.2s, transform 0.2s; }
+        .footer-col a { display: flex; align-items: center; gap: 8px; color: #94A3B8; font-size: .85rem; margin-bottom: 10px; transition: color 0.2s, transform 0.2s; }
         .footer-col a:hover { color: #fff; transform: translateX(3px); }
-        .footer-social { display: flex; gap: 8px; margin-top: 16px; }
-        .footer-social a { width: 36px; height: 36px; border-radius: 10px; background: rgba(255,255,255,.05); display: flex; align-items: center; justify-content: center; transition: background 0.2s, transform 0.2s; }
-        .footer-social a:hover { background: var(--primary); color: #fff; transform: translateY(-2px); }
+        .footer-social { display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap; }
+        .footer-social a { width: 38px; height: 38px; border-radius: 10px; background: rgba(255,255,255,.06); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.05rem; transition: background 0.2s, transform 0.2s; }
+        .footer-social a:hover { background: var(--primary); color: #fff; transform: translateY(-3px); }
         .footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding-top: 20px; display: flex; justify-content: space-between; font-size: .8rem; }
 
         @media (max-width: 960px) {
@@ -388,6 +905,7 @@
             .flow-showcase, .reply-demo, .privacy-wrap { grid-template-columns: 1fr; }
             .apps-grid { grid-template-columns: repeat(3,1fr); }
             .footer-grid { grid-template-columns: 1fr 1fr; }
+            .install-guide-grid { grid-template-columns: 1fr; }
         }
         @media (max-width: 560px) {
             .feature-grid { grid-template-columns: 1fr; }
@@ -398,6 +916,9 @@
 </head>
 <body>
     <a href="#main" class="skip-link" style="position:absolute;left:-999px;">Skip to main content</a>
+    
+    <!-- Top Scroll Progress Indicator -->
+    <div id="scrollProgress"></div>
 
     <!-- Navigation -->
     <header class="navbar" id="navbar">
@@ -416,8 +937,12 @@
                 <a href="#download">Download</a>
             </nav>
             <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme" title="Toggle Theme">
+                    <i class="fa-solid fa-moon" id="themeIcon"></i>
+                </button>
                 <a href="https://github.com/thenuxofc/thenux-reply-ai/releases/download/v1.0.0/THENUX.Reply.AI.apk" class="btn btn-primary nav-cta desktop-only btn-sm" data-ripple>
-                    <i class="fa-solid fa-download"></i> Download APK
+                    <i class="fa-solid fa-download"></i> Download APK (29 MB)
                 </a>
                 <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
                     <i class="fa-solid fa-bars" id="menuIcon"></i>
@@ -426,15 +951,20 @@
         </div>
     </header>
 
+    <!-- Glassmorphic Mobile Menu Panel -->
     <div class="mobile-panel" id="mobilePanel">
-        <a href="#home">Home <i class="fa-solid fa-arrow-right"></i></a>
-        <a href="#video-demo">Video Demo <i class="fa-solid fa-arrow-right"></i></a>
-        <a href="#features">Features <i class="fa-solid fa-arrow-right"></i></a>
-        <a href="#screenshots">Screenshots <i class="fa-solid fa-arrow-right"></i></a>
-        <a href="#how-it-works">How it Works <i class="fa-solid fa-arrow-right"></i></a>
-        <a href="#privacy">Privacy <i class="fa-solid fa-arrow-right"></i></a>
-        <a href="#download">Download <i class="fa-solid fa-arrow-right"></i></a>
-        <a href="https://github.com/thenuxofc/thenux-reply-ai/releases/download/v1.0.0/THENUX.Reply.AI.apk" class="btn btn-primary btn-block"><i class="fa-solid fa-download"></i> Download APK</a>
+        <a href="#home" class="mobile-nav-link">Home <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="#video-demo" class="mobile-nav-link">Video Demo <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="#features" class="mobile-nav-link">Features <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="#screenshots" class="mobile-nav-link">Screenshots <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="#how-it-works" class="mobile-nav-link">How it Works <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="#privacy" class="mobile-nav-link">Privacy <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="#download" class="mobile-nav-link">Download <i class="fa-solid fa-chevron-right"></i></a>
+        <div class="mobile-btn-wrap">
+            <a href="https://github.com/thenuxofc/thenux-reply-ai/releases/download/v1.0.0/THENUX.Reply.AI.apk" class="btn btn-primary btn-block" data-ripple>
+                <i class="fa-solid fa-download"></i> Download APK (29 MB)
+            </a>
+        </div>
     </div>
 
     <main id="main">
@@ -449,7 +979,7 @@
                     <h1>AI Replies.<br><span class="grad">Smarter Conversations.</span></h1>
                     <p class="lead">Generate intelligent replies, summarize conversations, translate messages, improve grammar, and communicate confidently with THENUX Reply AI.</p>
                     <div class="hero-btns">
-                        <a href="#download" class="btn btn-primary btn-lg" data-ripple><i class="fa-solid fa-download"></i> Download APK</a>
+                        <a href="#download" class="btn btn-primary btn-lg" data-ripple><i class="fa-solid fa-download"></i> Download APK (29 MB)</a>
                         <a href="#video-demo" class="btn btn-outline" data-ripple><i class="fa-solid fa-circle-play"></i> Watch Video Demo</a>
                     </div>
                     <div class="hero-stats">
@@ -469,11 +999,11 @@
                             <div class="phone-notch"></div>
                             <div class="chat-header">
                                 <div class="avatar"></div>
-                                <div><div class="name">Kasun</div><div class="status">● online</div></div>
+                                <div><div class="name">Kasun</div><div class="status"><i class="fa-solid fa-circle"></i> online</div></div>
                             </div>
                             <div class="chat-body" id="phoneChatBody">
-                                <div class="bubble-in">Machang, are we still meeting at 6 today? 👀</div>
-                                <div class="reply-chip c1"><span class="tag">Friendly</span>Yeah for sure, see you at 6! 😄</div>
+                                <div class="bubble-in">Machang, are we still meeting at 6 today?</div>
+                                <div class="reply-chip c1"><span class="tag">Friendly</span>Yeah for sure, see you at 6!</div>
                                 <div class="reply-chip c2"><span class="tag">Professional</span>Confirmed — I'll be there at 6 PM.</div>
                                 <div class="reply-chip c3"><span class="tag">Sinhala</span>ඔව් මචං, 6ට හම්බෙමු!</div>
                             </div>
@@ -484,7 +1014,7 @@
             </div>
         </section>
 
-        <!-- VIDEO PREVIEW SHOWCASE SECTION -->
+        <!-- COMPACT PHONE FRAME VIDEO PREVIEW SHOWCASE SECTION -->
         <section class="section-pad video-section" id="video-demo">
             <div class="container">
                 <div class="section-head reveal">
@@ -493,7 +1023,8 @@
                     <p>Watch how the floating AI assistant overlays over active chats, reads on-screen message context, and generates instant tri-lingual replies in real time.</p>
                 </div>
                 <div class="video-container reveal reveal-delay-1">
-                    <div class="video-frame-wrapper">
+                    <div class="video-phone-frame">
+                        <div class="video-phone-notch"></div>
                         <video class="video-player" controls preload="metadata" playsinline poster="https://i.ibb.co/s8BLNRz/Chat-GPT-Image-Jul-31-2026-03-50-02-PM.png">
                             <source src="https://github.com/thenuxofc/thenux-reply-ai/raw/refs/heads/main/thenuxvid.mp4" type="video/mp4">
                             Your browser does not support the video tag.
@@ -579,15 +1110,15 @@
                             <div class="bubble-in">Hey, can you send the report before end of day? Client wants it early.</div>
                         </div>
                         <div class="tone-tabs">
-                            <button class="tone-tab active" data-tone="friendly">😊 Friendly</button>
-                            <button class="tone-tab" data-tone="professional">💼 Professional</button>
-                            <button class="tone-tab" data-tone="sinhala">🇱🇰 Sinhala</button>
-                            <button class="tone-tab" data-tone="singlish">💬 Singlish</button>
-                            <button class="tone-tab" data-tone="short">⚡ Short</button>
-                            <button class="tone-tab" data-tone="formal">👔 Formal</button>
+                            <button class="tone-tab active" data-tone="friendly"><i class="fa-regular fa-face-smile"></i> Friendly</button>
+                            <button class="tone-tab" data-tone="professional"><i class="fa-solid fa-briefcase"></i> Professional</button>
+                            <button class="tone-tab" data-tone="sinhala"><i class="fa-solid fa-om"></i> Sinhala</button>
+                            <button class="tone-tab" data-tone="singlish"><i class="fa-solid fa-comments"></i> Singlish</button>
+                            <button class="tone-tab" data-tone="short"><i class="fa-solid fa-bolt-lightning"></i> Short</button>
+                            <button class="tone-tab" data-tone="formal"><i class="fa-solid fa-user-tie"></i> Formal</button>
                         </div>
                         <div class="rd-output" id="rdOutput">
-                            Sure thing! I'll get that report over to you before end of day 👍
+                            Sure thing! I'll get that report over to you before end of day.
                             <button class="copy-btn" id="rdCopy" title="Copy text"><i class="fa-regular fa-copy"></i></button>
                             <span class="rd-toast" id="rdToast">Copied!</span>
                         </div>
@@ -678,25 +1209,71 @@
             </div>
         </section>
 
-        <!-- Download Banner -->
+        <!-- ADVANCED & COLORFUL DOWNLOAD SECTION -->
         <section class="section-pad" id="download">
             <div class="container">
-                <div class="download-card reveal">
-                    <div class="dl-android"><i class="fa-brands fa-android"></i></div>
-                    <h2>Ready when you are</h2>
-                    <p>Grab the latest build of THENUX Reply AI and start replying smarter today. Free to install, no account required.</p>
-                    <div class="dl-meta">
-                        <span class="dl-meta-item"><i class="fa-solid fa-tag"></i> Version v1.0.0</span>
-                        <span class="dl-meta-item"><i class="fa-solid fa-file"></i> APK File</span>
-                        <span class="dl-meta-item"><i class="fa-solid fa-mobile-screen"></i> Android 8.0+</span>
+                <div class="download-wrapper reveal">
+                    <div class="dl-brand-icon"><i class="fa-brands fa-android"></i></div>
+                    <div class="dl-header-badge"><i class="fa-solid fa-circle-check"></i> Version 1.0.0 • Release Ready</div>
+                    <h2>Get THENUX Reply AI for Android</h2>
+                    <p>Start replying smarter across Instagram, WhatsApp, Telegram, and SMS. Free to install, zero ads, no account registration required.</p>
+                    
+                    <!-- Metadata Stats Bar (HIGHLIGHTING 29 MB!) -->
+                    <div class="dl-stats-grid">
+                        <div class="dl-stat-pill highlight-size">
+                            <i class="fa-solid fa-hard-drive"></i> Size: 29 MB
+                        </div>
+                        <div class="dl-stat-pill">
+                            <i class="fa-solid fa-tag"></i> Version: v1.0.0
+                        </div>
+                        <div class="dl-stat-pill">
+                            <i class="fa-solid fa-mobile-screen"></i> Android 8.0+
+                        </div>
+                        <div class="dl-stat-pill">
+                            <i class="fa-solid fa-shield-halved"></i> 100% Malware Free
+                        </div>
+                        <div class="dl-stat-pill">
+                            <i class="fa-solid fa-microchip"></i> Universal APK
+                        </div>
                     </div>
-                    <a href="https://github.com/thenuxofc/thenux-reply-ai/releases/download/v1.0.0/THENUX.Reply.AI.apk" class="btn btn-white btn-lg" data-ripple><i class="fa-solid fa-download"></i> Download APK</a>
+
+                    <!-- Dual Download Actions -->
+                    <div class="dl-actions">
+                        <a href="https://github.com/thenuxofc/thenux-reply-ai/releases/download/v1.0.0/THENUX.Reply.AI.apk" class="btn btn-white btn-lg" data-ripple>
+                            <i class="fa-solid fa-download"></i> Download Direct APK (29 MB)
+                        </a>
+                        <a href="https://github.com/thenuxofc/thenux-reply-ai/releases" target="_blank" class="btn btn-outline btn-lg" style="color:#fff; border-color:rgba(255,255,255,0.4); background:rgba(255,255,255,0.1);" data-ripple>
+                            <i class="fa-brands fa-github"></i> GitHub Releases Mirror
+                        </a>
+                    </div>
+
+                    <!-- Quick Installation Guide Cards -->
+                    <div class="install-guide-grid">
+                        <div class="install-card">
+                            <div class="install-card-num">1</div>
+                            <h4>Download APK (29 MB)</h4>
+                            <p>Download the official APK file directly to your Android device.</p>
+                        </div>
+                        <div class="install-card">
+                            <div class="install-card-num">2</div>
+                            <h4>Enable Floating Overlay</h4>
+                            <p>Allow `Display over other apps` for the assistant bubble.</p>
+                        </div>
+                        <div class="install-card">
+                            <div class="install-card-num">3</div>
+                            <h4>Turn On Accessibility</h4>
+                            <p>Enable `THENUX Accessibility Service` for automatic chat reading.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="Back to top" title="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Footer / Contacts -->
     <footer id="contact">
         <div class="container">
             <div class="footer-grid">
@@ -704,21 +1281,71 @@
                     <div class="brand"><span class="brand-mark"><i class="fa-solid fa-wand-magic-sparkles"></i></span> THENUX Reply AI™</div>
                     <p>Developed by THENUX AI Technologies. A context-aware, tri-lingual smart reply assistant for Android.</p>
                     <div class="footer-social">
-                        <a href="https://thenuxofc.store" target="_blank" aria-label="Website"><i class="fa-solid fa-globe"></i></a>
-                        <a href="https://github.com/thenuxofc" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://github.com/thenuxofc" target="_blank" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/thenux_ofc/" target="_blank" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/thenuxofc/" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://whatsapp.com/channel/0029VbDjCJf4dTnSTwrWf739" target="_blank" aria-label="WhatsApp Channel" title="WhatsApp Channel"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://thenuxofc.store" target="_blank" aria-label="Website" title="Website"><i class="fa-solid fa-globe"></i></a>
                     </div>
                 </div>
-                <div class="footer-col"><h4>Product</h4><a href="#features">Features</a><a href="#video-demo">Video Demo</a><a href="#how-it-works">How it Works</a><a href="#screenshots">Screenshots</a><a href="#download">Download</a></div>
-                <div class="footer-col"><h4>Company</h4><a href="https://thenuxofc.store">Website</a><a href="https://github.com/thenuxofc">GitHub</a><a href="#privacy">Privacy</a><a href="#faq">FAQ</a></div>
-                <div class="footer-col"><h4>Get the app</h4><a href="https://github.com/thenuxofc/thenux-reply-ai/releases/download/v1.0.0/THENUX.Reply.AI.apk">Download APK</a></div>
+
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#video-demo">Video Demo</a>
+                    <a href="#how-it-works">How it Works</a>
+                    <a href="#screenshots">Screenshots</a>
+                    <a href="#download">Download APK (29 MB)</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <a href="https://github.com/thenuxofc" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="https://www.instagram.com/thenux_ofc/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                    <a href="https://www.linkedin.com/in/thenuxofc/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://whatsapp.com/channel/0029VbDjCJf4dTnSTwrWf739" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Channel</a>
+                    <a href="https://thenuxofc.store" target="_blank"><i class="fa-solid fa-globe"></i> Website</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Get the App</h4>
+                    <a href="https://github.com/thenuxofc/thenux-reply-ai/releases/download/v1.0.0/THENUX.Reply.AI.apk"><i class="fa-solid fa-download"></i> Download APK (29 MB)</a>
+                    <a href="#privacy"><i class="fa-solid fa-shield-halved"></i> Privacy Policy</a>
+                    <a href="#faq"><i class="fa-solid fa-circle-question"></i> FAQ</a>
+                </div>
             </div>
-            <div class="footer-bottom"><span>© 2026 THENUX. All rights reserved.</span><span>Built by Thenula Panapiti</span></div>
+            <div class="footer-bottom">
+                <span>© 2026 THENUX. All rights reserved.</span>
+                <span>Built by Thenula Panapiti</span>
+            </div>
         </div>
     </footer>
 
     <!-- JavaScript Logic -->
     <script>
         (function() {
+            // Theme Toggle Controller
+            var themeToggle = document.getElementById('themeToggle');
+            var themeIcon = document.getElementById('themeIcon');
+            var savedTheme = localStorage.getItem('thenux-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+            function applyTheme(theme) {
+                document.documentElement.setAttribute('data-theme', theme);
+                localStorage.setItem('thenux-theme', theme);
+                if (themeIcon) {
+                    themeIcon.className = theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+                }
+            }
+            applyTheme(savedTheme);
+
+            if (themeToggle) {
+                themeToggle.addEventListener('click', function() {
+                    var current = document.documentElement.getAttribute('data-theme') || 'light';
+                    var nextTheme = current === 'dark' ? 'light' : 'dark';
+                    applyTheme(nextTheme);
+                });
+            }
+
             // 1. Feature Items Data
             var FEATURES = [
                 { icon: 'fa-comment-dots', title: 'Smart Reply', desc: 'Six instant reply suggestions the moment a message lands.' },
@@ -766,13 +1393,13 @@
                 ['Context-aware, on-device reading', false, true]
             ];
 
-            // 4. Tone Dictionary
+            // 4. Tone Dictionary (Clean text without emojis)
             var TONES = {
-                friendly: { text: "Sure thing! I'll get that report over to you before end of day 👍" },
+                friendly: { text: "Sure thing! I'll get that report over to you before end of day." },
                 professional: { text: "Understood — I'll have the report finalized and sent to you before end of day." },
                 sinhala: { text: "හරි, රිපෝට් එක අද රෑට කලින් යවන්නම්." },
                 singlish: { text: "Ow ow, report eka aday end of day walata kalin evanawa." },
-                short: { text: "On it — EOD 👍" },
+                short: { text: "On it — EOD." },
                 formal: { text: "Please be advised the report will be submitted to you prior to the close of business today." }
             };
 
@@ -930,14 +1557,34 @@
             // Auto Carousel Slider
             setInterval(() => goToSlide(currentSlide + 1), 5000);
 
-            // Navbar Scroll Effect & Scroll Reveal Observer
+            // Navbar Scroll Effect, Scroll Progress & Scroll Reveal Observer
             var navbar = document.getElementById('navbar');
+            var scrollProgress = document.getElementById('scrollProgress');
+            var backToTop = document.getElementById('backToTop');
+
             window.addEventListener('scroll', () => {
+                var scrollTop = window.scrollY;
+                var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                var scrolled = (scrollTop / docHeight) * 100;
+
+                if (scrollProgress) scrollProgress.style.width = `${scrolled}%`;
+
                 if (navbar) {
-                    if (window.scrollY > 30) navbar.classList.add('scrolled');
+                    if (scrollTop > 30) navbar.classList.add('scrolled');
                     else navbar.classList.remove('scrolled');
                 }
+
+                if (backToTop) {
+                    if (scrollTop > 400) backToTop.classList.add('show');
+                    else backToTop.classList.remove('show');
+                }
             });
+
+            if (backToTop) {
+                backToTop.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
 
             var revealEls = document.querySelectorAll('.reveal');
             if ('IntersectionObserver' in window) {
