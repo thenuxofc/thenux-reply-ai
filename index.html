@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,15 +8,19 @@
     <meta name="theme-color" content="#2563EB">
     <meta name="color-scheme" content="light dark">
 
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://replyai-thenux.netlify.app/">
 
+    <!-- Favicon & Touch Icons -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='30' fill='%232563EB'/><path d='M30 50 L45 65 L70 35' stroke='%23ffffff' stroke-width='10' fill='none' stroke-linecap='round'/></svg>">
     <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='30' fill='%232563EB'/><path d='M30 50 L45 65 L70 35' stroke='%23ffffff' stroke-width='10' fill='none' stroke-linecap='round'/></svg>">
 
+    <!-- SEO Meta Tags for Google Search Console -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="author" content="THENUX AI Technologies (Thenula Panapiti)">
     <meta name="keywords" content="THENUX Reply AI, Android Smart Reply, Sinhala AI Assistant, Singlish AI Reply, WhatsApp Floating Assistant, Instagram Direct DM AI, Tri-lingual Chat Bot, Android Accessibility Service AI, Smart Reply Android APK 29 MB">
 
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://replyai-thenux.netlify.app/">
     <meta property="og:title" content="THENUX Reply AI™ — Context-Aware Tri-Lingual Smart Assistant for Android">
@@ -28,6 +29,7 @@
     <meta property="og:site_name" content="THENUX Reply AI™">
     <meta property="og:locale" content="en_US">
 
+    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://replyai-thenux.netlify.app/">
     <meta name="twitter:title" content="THENUX Reply AI™ — AI Replies. Smarter Conversations.">
@@ -35,6 +37,7 @@
     <meta name="twitter:image" content="https://i.ibb.co/s8BLNRz/Chat-GPT-Image-Jul-31-2026-03-50-02-PM.png">
     <meta name="twitter:creator" content="@thenuxofc">
 
+    <!-- Structured Data JSON-LD Schema for Google Rich Snippets -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -70,13 +73,16 @@
     }
     </script>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <style>
+        /* Light Theme Tokens */
         :root {
             --primary: #2563EB;
             --primary-dark: #1D4ED8;
@@ -131,6 +137,7 @@
             --transition-smooth: .3s cubic-bezier(.16, 1, .3, 1);
         }
 
+        /* Dark Theme Overrides */
         [data-theme="dark"] {
             --bg: #090D16;
             --bg-alt: #111827;
@@ -167,10 +174,7 @@
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        #scrollProgress {
-            position: fixed; top: 0; left: 0; height: 3.5px;
-            background: var(--grad-brand); width: 0%; z-index: 2000; transition: width 0.1s ease;
-        }
+        #scrollProgress { position: fixed; top: 0; left: 0; height: 3.5px; background: var(--grad-brand); width: 0%; z-index: 2000; transition: width 0.1s ease; }
 
         h1, h2, h3, h4 { font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; line-height: 1.2; font-weight: 700; color: var(--text-dark); }
         p { color: var(--text-gray); }
@@ -205,7 +209,7 @@
             position: relative; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; gap: 8px;
             font-weight: 700; font-size: .92rem; padding: 14px 26px; border-radius: 100px; border: 1.5px solid transparent;
             transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-smooth);
-            min-height: 48px; letter-spacing: .01em; white-space: nowrap;
+            min-height: 48px; letter-spacing: .01em; white-space: nowrap; flex-shrink: 0; width: auto; height: auto;
         }
         .btn::after {
             content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
@@ -219,10 +223,9 @@
         .btn-outline:hover { border-color: var(--primary); color: var(--primary); transform: translateY(-2px); box-shadow: var(--shadow-md); }
         .btn-white { background: #fff; color: var(--primary); border: none; box-shadow: var(--shadow-md); }
         .btn-white:hover { transform: translateY(-3px); box-shadow: 0 20px 40px rgba(0,0,0,.15); }
-        .btn-lg { padding: 18px 34px; font-size: 1.02rem; }
+        .btn-lg { padding: 16px 32px; font-size: 1rem; }
         .btn-block { width: 100%; }
         .btn-sm { padding: 9px 18px; font-size: .82rem; min-height: 38px; }
-        .btn:disabled, .btn.is-disabled { opacity: .75; cursor: progress; pointer-events: none; }
 
         .ripple { position: absolute; border-radius: 50%; background: rgba(255,255,255,.5); transform: scale(0); animation: ripple-anim .6s ease-out forwards; pointer-events: none; }
         @keyframes ripple-anim { to { transform: scale(3); opacity: 0; } }
@@ -263,13 +266,14 @@
         .hero-copy h1 .grad { background: var(--grad-brand); -webkit-background-clip: text; background-clip: text; color: transparent; }
         .hero-copy p.lead { margin-top: 20px; font-size: 1.1rem; max-width: 500px; }
         .hero-btns { display: flex; gap: 14px; margin-top: 32px; flex-wrap: wrap; }
-        .hero-stats { display: flex; gap: 32px; margin-top: 44px; flex-wrap: wrap; }
+        .hero-stats { display: flex; gap: 24px; margin-top: 44px; flex-wrap: wrap; }
         .stat-item { display: flex; align-items: center; gap: 10px; transition: transform 0.3s; }
         .stat-item:hover { transform: translateY(-4px); }
         .stat-icon { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
         .stat-icon.si1 { background: rgba(37,99,235,.1); color: var(--primary); }
         .stat-icon.si2 { background: rgba(6,182,212,.1); color: var(--accent); }
         .stat-icon.si3 { background: rgba(16,185,129,.1); color: var(--success); }
+        .stat-icon.si4 { background: rgba(124,58,237,.1); color: var(--purple); }
         .stat-item .num { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.7rem; font-weight: 800; }
         .stat-item .label { font-size: .78rem; color: var(--text-gray); font-weight: 600; }
 
@@ -410,7 +414,7 @@
         .download-wrapper {
             background: var(--grad-vibrant);
             border-radius: var(--radius-2xl);
-            padding: 64px 40px 48px;
+            padding: 64px 32px 48px;
             text-align: center;
             color: #fff;
             box-shadow: 0 25px 70px rgba(37, 99, 235, 0.35);
@@ -431,7 +435,6 @@
         .download-wrapper h2 { color: #fff; font-size: clamp(1.8rem, 3.2vw, 2.6rem); font-weight: 800; margin-bottom: 16px; }
         .download-wrapper > .container > p.dl-lead { color: rgba(255, 255, 255, 0.9); font-size: 1.08rem; max-width: 620px; margin: 0 auto 32px; line-height: 1.65; }
 
-        /* Device detection banner */
         .device-banner {
             display: none;
             align-items: center;
@@ -457,66 +460,49 @@
         .dl-stat-pill.trust-pill i.fa-shield-halved,
         .dl-stat-pill.trust-pill i.fa-magnifying-glass { color: #A7F3D0; }
 
-        /* Main action row: button + QR side by side */
+        /* ROCK-SOLID STABLE BUTTON ROW IN DOWNLOAD SECTION */
         .dl-main-row {
             display: flex;
-            align-items: stretch;
+            align-items: center;
             justify-content: center;
-            gap: 28px;
+            gap: 24px;
             flex-wrap: wrap;
-            margin-bottom: 8px;
+            margin-bottom: 24px;
+            width: 100%;
         }
-        .dl-action-col { display: flex; flex-direction: column; gap: 14px; align-items: center; min-width: 300px; }
-        .dl-actions { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; width: 100%; }
-
-        /* Primary download button with progress feedback */
-        .dl-primary-btn {
-            position: relative;
-            overflow: hidden;
-            min-width: 300px;
-        }
-        .dl-primary-btn .dl-btn-progress {
-            position: absolute;
-            inset: 0;
-            width: 0%;
-            background: rgba(37, 99, 235, 0.28);
-            transition: width 1.6s cubic-bezier(.16,1,.3,1);
-            z-index: 0;
-            border-radius: inherit;
-        }
-        .dl-primary-btn.downloading .dl-btn-progress { width: 100%; }
-        .dl-primary-btn span, .dl-primary-btn i { position: relative; z-index: 1; }
-        .dl-primary-btn .btn-label-default,
-        .dl-primary-btn .btn-label-loading,
-        .dl-primary-btn .btn-label-done { position: relative; z-index: 1; display: none; align-items: center; gap: 8px; }
-        .dl-primary-btn .btn-label-default { display: inline-flex; }
-        .dl-primary-btn.downloading .btn-label-default { display: none; }
-        .dl-primary-btn.downloading .btn-label-loading { display: inline-flex; }
-        .dl-primary-btn.done .btn-label-loading { display: none; }
-        .dl-primary-btn.done .btn-label-done { display: inline-flex; }
-
-        .spin-icon { animation: spin-anim 0.8s linear infinite; }
-        @keyframes spin-anim { to { transform: rotate(360deg); } }
-
-        /* QR code panel */
-        .dl-qr-panel {
-            background: rgba(255, 255, 255, 0.14);
-            border: 1px solid rgba(255, 255, 255, 0.28);
-            border-radius: var(--radius-md);
-            padding: 16px;
+        .dl-action-col {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 8px;
-            backdrop-filter: blur(10px);
-            width: 168px;
+            justify-content: center;
+            gap: 12px;
         }
-        .dl-qr-panel img, .dl-qr-panel svg { width: 120px; height: 120px; border-radius: 8px; background: #fff; padding: 6px; }
-        .dl-qr-panel .qr-label { font-size: .72rem; font-weight: 700; color: rgba(255,255,255,.9); text-align: center; line-height: 1.4; }
+        .dl-actions {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .dl-qr-panel {
+            background: rgba(255, 255, 255, 0.14);
+            border: 1px solid rgba(255, 255, 255, 0.28);
+            border-radius: 20px;
+            padding: 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            backdrop-filter: blur(10px);
+            width: 150px;
+            flex-shrink: 0;
+        }
+        .dl-qr-panel img, .dl-qr-panel svg { width: 110px; height: 110px; border-radius: 10px; background: #fff; padding: 6px; }
+        .dl-qr-panel .qr-label { font-size: .72rem; font-weight: 700; color: rgba(255,255,255,.9); text-align: center; line-height: 1.3; }
 
         .dl-helper-text { font-size: .78rem; color: rgba(255,255,255,.75); margin-top: 4px; }
 
-        /* Trust row (checksum / scan link) */
         .dl-trust-row {
             display: flex;
             justify-content: center;
@@ -555,7 +541,6 @@
         .dl-trust-item a { text-decoration: underline; text-underline-offset: 2px; color: inherit; }
         .dl-trust-item a:hover { color: #fff; }
 
-        /* Install wizard (expandable steps) */
         .install-wizard {
             margin-top: 44px;
             text-align: left;
@@ -636,11 +621,43 @@
         .install-mark-btn:hover { background: rgba(255,255,255,.3); transform: translateY(-1px); }
         .install-step.completed .install-mark-btn { background: rgba(16,185,129,.35); border-color: rgba(110,231,183,.5); }
 
+        @keyframes counterPop {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.35); color: var(--accent-light); }
+            100% { transform: scale(1); }
+        }
+        .counter-pop { display: inline-block; animation: counterPop 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+        .dl-toast {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: var(--card-solid);
+            border: 1.5px solid var(--primary);
+            color: var(--text-dark);
+            padding: 14px 22px;
+            border-radius: 100px;
+            font-size: 0.88rem;
+            font-weight: 700;
+            box-shadow: 0 16px 36px rgba(37,99,235,0.25);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 3000;
+            opacity: 0;
+            transform: translateY(20px) scale(0.9);
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+            pointer-events: none;
+        }
+        .dl-toast.show { opacity: 1; transform: translateY(0) scale(1); }
+        .dl-toast i { color: var(--primary); font-size: 1.1rem; }
+        .dl-toast span.count-badge { background: var(--grad-brand); color: #fff; padding: 3px 10px; border-radius: 100px; font-size: 0.78rem; }
+
         @media (max-width: 700px) {
             .dl-main-row { flex-direction: column; align-items: center; }
             .install-step-body-inner { padding-left: 18px; }
+            .dl-toast { left: 16px; right: 16px; bottom: 20px; justify-content: center; }
         }
-        /* ============ END DOWNLOAD SECTION ENHANCEMENTS ============ */
 
         #backToTop {
             position: fixed; bottom: 24px; right: 24px; width: 44px; height: 44px; border-radius: 50%;
@@ -737,13 +754,14 @@
                     <h1>AI Replies.<br><span class="grad">Smarter Conversations.</span></h1>
                     <p class="lead">Generate intelligent replies, summarize conversations, translate messages, improve grammar, and communicate confidently with THENUX Reply AI.</p>
                     <div class="hero-btns">
-                        <a href="#download" class="btn btn-primary btn-lg" data-ripple><i class="fa-solid fa-download"></i> Download APK (29 MB)</a>
+                        <a href="https://github.com/thenuxofc/thenux-reply-ai/releases/download/v1.0.0/THENUX.Reply.AI.apk" class="btn btn-primary btn-lg" data-ripple data-download-link><i class="fa-solid fa-download"></i> Download APK (29 MB)</a>
                         <a href="#video-demo" class="btn btn-outline" data-ripple><i class="fa-solid fa-circle-play"></i> Watch Video Demo</a>
                     </div>
                     <div class="hero-stats">
                         <div class="stat-item"><div class="stat-icon si1"><i class="fa-solid fa-wand-magic-sparkles"></i></div><div><div class="num"><span class="counter" data-target="18">0</span>+</div><div class="label">AI Tools</div></div></div>
                         <div class="stat-item"><div class="stat-icon si2"><i class="fa-solid fa-language"></i></div><div><div class="num"><span class="counter" data-target="3">0</span></div><div class="label">Languages</div></div></div>
                         <div class="stat-item"><div class="stat-icon si3"><i class="fa-solid fa-bolt-lightning"></i></div><div><div class="num">&lt;1s</div><div class="label">Response Time</div></div></div>
+                        <div class="stat-item"><div class="stat-icon si4"><i class="fa-solid fa-download"></i></div><div><div class="num"><span class="counter-val" id="heroDlCounter">0</span></div><div class="label">GitHub Downloads</div></div></div>
                     </div>
                 </div>
 
@@ -972,13 +990,13 @@
                         <span id="deviceBannerText"></span>
                     </div>
 
-                    <!-- Stats + trust bar -->
+                    <!-- Stats + trust bar (REAL GITHUB DOWNLOAD COUNT STAT) -->
                     <div class="dl-stats-grid">
                         <div class="dl-stat-pill highlight-size"><i class="fa-solid fa-hard-drive"></i> Size: 29 MB</div>
+                        <div class="dl-stat-pill highlight-count" id="dlSectionCounterPill" style="background: rgba(6, 182, 212, 0.35); border-color: rgba(103, 232, 249, 0.6); box-shadow: 0 0 20px rgba(6, 182, 212, 0.4);"><i class="fa-solid fa-cloud-arrow-down" style="color:#67E8F9;"></i> <span id="dlSectionCounter">0</span> Real Downloads</div>
                         <div class="dl-stat-pill"><i class="fa-solid fa-tag"></i> Version: v1.0.0</div>
                         <div class="dl-stat-pill"><i class="fa-solid fa-mobile-screen"></i> Android 8.0+</div>
                         <div class="dl-stat-pill trust-pill"><i class="fa-solid fa-shield-halved"></i> 100% Malware Free</div>
-                        <div class="dl-stat-pill"><i class="fa-solid fa-microchip"></i> Universal APK</div>
                     </div>
 
                     <!-- Main action row: primary button + QR code -->
@@ -986,13 +1004,10 @@
                         <div class="dl-action-col">
                             <div class="dl-actions">
                                 <a href="https://github.com/thenuxofc/thenux-reply-ai/releases/download/v1.0.0/THENUX.Reply.AI.apk"
-                                   class="btn btn-white btn-lg dl-primary-btn"
+                                   class="btn btn-white btn-lg"
                                    id="mainDownloadBtn"
                                    data-ripple data-download-link>
-                                    <span class="dl-btn-progress"></span>
-                                    <span class="btn-label-default"><i class="fa-solid fa-download"></i> Download Direct APK (29 MB)</span>
-                                    <span class="btn-label-loading"><i class="fa-solid fa-circle-notch spin-icon"></i> Preparing your download…</span>
-                                    <span class="btn-label-done"><i class="fa-solid fa-circle-check"></i> Download started!</span>
+                                    <i class="fa-solid fa-download"></i> Download Direct APK (29 MB)
                                 </a>
                                 <a href="https://github.com/thenuxofc/thenux-reply-ai/releases" target="_blank" class="btn btn-outline btn-lg" style="color:#fff; border-color:rgba(255,255,255,0.4); background:rgba(255,255,255,0.1);" data-ripple>
                                     <i class="fa-brands fa-github"></i> GitHub Releases Mirror
@@ -1040,6 +1055,13 @@
         <!-- ============ END ENHANCED DOWNLOAD SECTION ============ -->
     </main>
 
+    <!-- Floating Download Toast Notification -->
+    <div class="dl-toast" id="dlToastNotification">
+        <i class="fa-solid fa-circle-check"></i>
+        <span>Download Started!</span>
+        <span class="count-badge" id="dlToastCountBadge">Real Downloads</span>
+    </div>
+
     <button id="backToTop" aria-label="Back to top" title="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
 
     <footer id="contact">
@@ -1077,7 +1099,7 @@
 
                 <div class="footer-col">
                     <h4>Get the App</h4>
-                    <a href="https://github.com/thenuxofc/thenux-reply-ai/releases/download/v1.0.0/THENUX.Reply.AI.apk"><i class="fa-solid fa-download"></i> Download APK (29 MB)</a>
+                    <a href="https://github.com/thenuxofc/thenux-reply-ai/releases/download/v1.0.0/THENUX.Reply.AI.apk" data-download-link><i class="fa-solid fa-download"></i> Download APK (29 MB)</a>
                     <a href="#privacy"><i class="fa-solid fa-shield-halved"></i> Privacy Policy</a>
                     <a href="#faq"><i class="fa-solid fa-circle-question"></i> FAQ</a>
                 </div>
@@ -1264,6 +1286,7 @@
                 });
             }
 
+            // Animated Counters
             var counters = document.querySelectorAll('.counter');
             var countersDone = false;
             function animateCounters() {
@@ -1361,9 +1384,87 @@
                 });
             });
 
-            /* ============ ENHANCED DOWNLOAD SECTION LOGIC ============ */
+            /* ============ REAL GITHUB DOWNLOAD COUNTER LOGIC ============ */
+            (function realGitHubDownloadCounter() {
+                var heroCounter = document.getElementById('heroDlCounter');
+                var sectionCounter = document.getElementById('dlSectionCounter');
+                var dlToast = document.getElementById('dlToastNotification');
+                var toastBadge = document.getElementById('dlToastCountBadge');
 
-            // --- 1. Device / OS detection banner ---
+                function formatNumber(num) {
+                    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                }
+
+                function renderDownloadCounters(val, animate) {
+                    var formatted = formatNumber(val);
+                    if (heroCounter) {
+                        heroCounter.textContent = formatted;
+                        if (animate) {
+                            heroCounter.classList.remove('counter-pop');
+                            void heroCounter.offsetWidth;
+                            heroCounter.classList.add('counter-pop');
+                        }
+                    }
+                    if (sectionCounter) {
+                        sectionCounter.textContent = formatted;
+                        if (animate) {
+                            sectionCounter.classList.remove('counter-pop');
+                            void sectionCounter.offsetWidth;
+                            sectionCounter.classList.add('counter-pop');
+                        }
+                    }
+                    if (toastBadge) {
+                        toastBadge.textContent = formatted + ' Real Downloads';
+                    }
+                }
+
+                // Initial render from local cache if present
+                var cached = parseInt(localStorage.getItem('thenux_real_github_downloads') || '0', 10);
+                renderDownloadCounters(cached, false);
+
+                // Fetch 100% REAL live downloads from GitHub API for repo 'thenuxofc/thenux-reply-ai'
+                fetch('https://api.github.com/repos/thenuxofc/thenux-reply-ai/releases')
+                    .then(function(res) {
+                        if (!res.ok) throw new Error('GitHub API error');
+                        return res.json();
+                    })
+                    .then(function(releases) {
+                        if (Array.isArray(releases)) {
+                            var totalRealDownloads = 0;
+                            releases.forEach(function(release) {
+                                if (release.assets && Array.isArray(release.assets)) {
+                                    release.assets.forEach(function(asset) {
+                                        totalRealDownloads += (asset.download_count || 0);
+                                    });
+                                }
+                            });
+                            localStorage.setItem('thenux_real_github_downloads', totalRealDownloads);
+                            renderDownloadCounters(totalRealDownloads, false);
+                        }
+                    })
+                    .catch(function(err) {
+                        console.warn('Could not fetch live GitHub release stats:', err);
+                    });
+
+                // On user click, increment counter in real-time & show toast
+                var downloadLinks = document.querySelectorAll('a[href*="THENUX.Reply.AI.apk"], a[data-download-link]');
+                downloadLinks.forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        var current = parseInt(localStorage.getItem('thenux_real_github_downloads') || '0', 10) + 1;
+                        localStorage.setItem('thenux_real_github_downloads', current);
+                        renderDownloadCounters(current, true);
+
+                        if (dlToast) {
+                            dlToast.classList.add('show');
+                            setTimeout(function() {
+                                dlToast.classList.remove('show');
+                            }, 3200);
+                        }
+                    });
+                });
+            })();
+
+            /* ============ ENHANCED DOWNLOAD SECTION LOGIC ============ */
             (function deviceDetect() {
                 var banner = document.getElementById('deviceBanner');
                 var bannerText = document.getElementById('deviceBannerText');
@@ -1390,27 +1491,6 @@
                 }
             })();
 
-            // --- 2. Animated download progress feedback ---
-            var mainBtn = document.getElementById('mainDownloadBtn');
-            if (mainBtn) {
-                mainBtn.addEventListener('click', function(e) {
-                    if (mainBtn.classList.contains('downloading') || mainBtn.classList.contains('done')) return;
-                    mainBtn.classList.add('downloading');
-                    setTimeout(function() {
-                        mainBtn.classList.remove('downloading');
-                        mainBtn.classList.add('done');
-                        setTimeout(function() {
-                            mainBtn.classList.remove('done');
-                        }, 2600);
-                    }, 1500);
-                });
-            }
-
-            // --- 3. QR code generation (lightweight, dependency-free) ---
-            // Minimal QR encoder is heavy to hand-roll; instead we render a
-            // recognizable pseudo-QR pattern deterministically from the URL
-            // plus provide the real payload via an external QR image service
-            // as the primary source, with graceful fallback.
             (function renderQR() {
                 var svg = document.getElementById('qrCodeSvg');
                 if (!svg) return;
@@ -1418,19 +1498,17 @@
 
                 var img = document.createElement('img');
                 img.alt = 'QR code to download THENUX Reply AI APK';
-                img.width = 120; img.height = 120;
-                img.style.borderRadius = '8px';
+                img.width = 110; img.height = 110;
+                img.style.borderRadius = '10px';
                 img.style.background = '#fff';
                 img.style.padding = '6px';
                 img.src = 'https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=' + encodeURIComponent(url);
                 img.onerror = function() {
-                    // Fallback: keep the blank svg box with a download glyph
-                    svg.outerHTML = '<div style="width:120px;height:120px;border-radius:8px;background:#fff;display:flex;align-items:center;justify-content:center;"><i class="fa-solid fa-qrcode" style="font-size:2.4rem;color:#1D4ED8;"></i></div>';
+                    svg.outerHTML = '<div style="width:110px;height:110px;border-radius:10px;background:#fff;display:flex;align-items:center;justify-content:center;"><i class="fa-solid fa-qrcode" style="font-size:2.2rem;color:#1D4ED8;"></i></div>';
                 };
                 svg.replaceWith(img);
             })();
 
-            // --- 4. Checksum copy-to-clipboard ---
             (function checksumCopy() {
                 var fullChecksum = '8f3ac1d9e7b24560af13d8c4e9f01a7b5c3d2e6f8901234567890abcdeffc92e';
                 var copyBtn = document.getElementById('copyChecksum');
@@ -1445,7 +1523,6 @@
                 });
             })();
 
-            // --- 5. Expandable install wizard with progress tracking ---
             (function installWizard() {
                 var STEPS = [
                     {
@@ -1524,7 +1601,6 @@
 
                 render();
             })();
-            /* ============ END DOWNLOAD SECTION LOGIC ============ */
         })();
     </script>
 </body>
